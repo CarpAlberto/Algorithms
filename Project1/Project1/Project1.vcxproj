@@ -116,10 +116,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Balanced.cpp" />
+    <ClCompile Include="CoinChange.cpp" />
+    <ClCompile Include="CycleDetectionLinkedList.cpp" />
     <ClCompile Include="CycleLinkedList.cpp" />
+    <ClCompile Include="FindPairGivenSum.cpp" />
     <ClCompile Include="IntegerLonely.cpp" />
+    <ClCompile Include="LargestQuadraticMatrixOnes.cpp" />
+    <ClCompile Include="LengthOfLongestSubstring.cpp" />
+    <ClCompile Include="LongestCommonSubsequence.cpp" />
+    <ClCompile Include="LongestPalindromicSubSequence.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MaxSubArraySum.cpp" />
+    <ClCompile Include="NumberPartitionSet.cpp" />
+    <ClCompile Include="PathStairs.cpp" />
+    <ClCompile Include="PerfectSum.cpp" />
     <ClCompile Include="QueueTwoStacks.cpp" />
+    <ClCompile Include="ReverseParanthesisHakerRank.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="forward.h" />

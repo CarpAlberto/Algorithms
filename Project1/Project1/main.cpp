@@ -6,6 +6,11 @@
 #define LONELY_INTEGER
 #define QUEUE_TWO_STACKS
 #define IS_BALANCED
+#define PAIR_GIVEN_SUM
+#define PATH_STAIRS
+#define MAX_ONES_MATRIX
+#define MAX_SUBARRAY_SUM
+#define LENGTH_LONGEST_SUBSTRING
 
 int main()
 {
@@ -36,5 +41,45 @@ int main()
 			std::cout << "Not Balanced";
 	#endif
 
+	#ifdef PAIR_GIVEN_SUM
+		auto vSum = { 1,2,3,4,5,6 };
+		bool pair = FindPairWithGivenSum(vSum, 6);
+		if (pair)
+			std::cout << "Found pair with given sum ";
+		else
+			std::cout << "Not Found pair with given sum ";
+	#endif
+
+	#ifdef PATH_STAIRS
+		std::vector<int> hashtable;
+		int steps = 10;
+		hashtable.reserve(steps + 1);
+		for (int i = 0; i <= steps + 1; i++)
+			hashtable.push_back(0);
+		int response = countPathsMemorization(steps, hashtable);
+		std::cout << "Found the steps " <<  response;
+
+	#endif
+
+	#ifdef MAX_ONES_MATRIX
+		matrixInt max = { 
+			{ 1, 1, 0, 0, 1 },
+			{ 1, 0, 1, 1, 1 },
+			{ 1, 1, 1, 1, 1 },
+			{ 1, 0, 1, 1, 1 }
+		};
+		int largest = ComputeLargestQuadratic(max);
+
+		std::cout << "The largest quadratic matrix " << largest;
+	#endif
+
+	#ifdef MAX_SUBARRAY_SUM
+		std::vector<int> l = { -2,1,-3,4,-1,2,1,-5,4 };
+		long sum = maxSubArray(l);
+	#endif
+
+	#ifdef LENGTH_LONGEST_SUBSTRING
+		int test = lengthOfLongestSubstring("abavbaa");
+	#endif
 	system("pause");
 }
