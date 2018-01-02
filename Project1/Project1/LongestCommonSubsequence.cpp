@@ -25,4 +25,5 @@ int longestCommonSubsequence(std::string seq1, std::string seq2)
 			}
 		}
 	}
+	return max;
 }

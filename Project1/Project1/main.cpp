@@ -11,6 +11,7 @@
 #define MAX_ONES_MATRIX
 #define MAX_SUBARRAY_SUM
 #define LENGTH_LONGEST_SUBSTRING
+#define DEGREE_ARRAY
 
 int main()
 {
@@ -80,6 +81,14 @@ int main()
 
 	#ifdef LENGTH_LONGEST_SUBSTRING
 		int test = lengthOfLongestSubstring("abavbaa");
+	#endif
+
+	#ifdef DEGREE_ARRAY
+		std::vector<int> array= { 1,2,2,3,1,4,2 };
+		auto size = findShortestSubArray2(array);
+		
+		std::cout << "The size of the shortest array is: " << size << std::endl;
+
 	#endif
 	system("pause");
 }

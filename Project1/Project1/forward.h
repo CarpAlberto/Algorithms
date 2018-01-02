@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <unordered_set>
+#include <unordered_map>
 #include <algorithm>
 #include <fstream>
 
@@ -37,6 +38,12 @@ public:
 
 };
 
+struct Item {
+	int _frequency;
+	int _index_start;
+	int _index_end;
+};
+
 typedef std::vector<std::vector<int>> matrixInt;
 
 bool isBalanced(std::string expression);
@@ -48,3 +55,5 @@ long getWays(vector < long > c, long money);
 int maxSubArray(vector<int>& nums);
 int lengthOfLongestSubstring(string s);
 int lps(char *seq, int i, int j);
+int findShortestSubArray(std::vector<int>& nums);
+int findShortestSubArray2(std::vector<int>& nums);
