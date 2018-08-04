@@ -7,6 +7,8 @@
 #include <unordered_map>
 #include <algorithm>
 #include <fstream>
+#include <iostream>
+#include <queue>
 
 using namespace std;
 
@@ -57,3 +59,5 @@ int lengthOfLongestSubstring(string s);
 int lps(char *seq, int i, int j);
 int findShortestSubArray(std::vector<int>& nums);
 int findShortestSubArray2(std::vector<int>& nums);
+int CountBits(int n);
+void BuildGraphDF();

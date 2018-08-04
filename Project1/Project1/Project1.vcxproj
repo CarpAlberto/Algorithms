@@ -117,9 +117,12 @@
   <ItemGroup>
     <ClCompile Include="Balanced.cpp" />
     <ClCompile Include="CoinChange.cpp" />
+    <ClCompile Include="CountBitArray.cpp" />
     <ClCompile Include="CycleDetectionLinkedList.cpp" />
     <ClCompile Include="CycleLinkedList.cpp" />
+    <ClCompile Include="DegreeArray.cpp" />
     <ClCompile Include="FindPairGivenSum.cpp" />
+    <ClCompile Include="Graph.cpp" />
     <ClCompile Include="IntegerLonely.cpp" />
     <ClCompile Include="LargestQuadraticMatrixOnes.cpp" />
     <ClCompile Include="LengthOfLongestSubstring.cpp" />

@@ -12,6 +12,8 @@
 #define MAX_SUBARRAY_SUM
 #define LENGTH_LONGEST_SUBSTRING
 #define DEGREE_ARRAY
+#define COUNT_BITS
+#define GRAPH_DF
 
 int main()
 {
@@ -89,6 +91,14 @@ int main()
 		
 		std::cout << "The size of the shortest array is: " << size << std::endl;
 
+	#endif
+	#ifdef COUNT_BITS
+		int bits = CountBits(9);
+		std::cout << "The bits number are " << bits << std::endl;
+	#endif
+
+	#ifdef GRAPH_DF
+		BuildGraphDF();
 	#endif
 	system("pause");
 }

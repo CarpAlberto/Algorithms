@@ -60,3 +60,4 @@ int findShortestSubArray2(std::vector<int>& nums)
 	}
 	return min;
 }
+
